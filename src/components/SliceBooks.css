@@ -1,0 +1,54 @@
+.sliceBooks
+{
+    background-color: rgb(154, 162, 172);
+    width: 80%;
+    margin: auto;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sliceBooks > .container__slice
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.sliceBooks > .container__slice > .previosIcon > .MuiSvgIcon-root
+{
+    font-size: 44px;
+    cursor: pointer;
+}
+.sliceBooks > .container__slice > .previosIcon > .MuiSvgIcon-root:hover
+{
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+.sliceBooks > .container__slice > .nextIcon > .MuiSvgIcon-root
+{
+    font-size: 44px;
+    cursor: pointer;
+}
+.sliceBooks > .container__slice > .nextIcon > .MuiSvgIcon-root:hover
+{
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+.sliceBooks > .container__slice > .books
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.sliceBooks > .container__slice > .books > img
+{
+    border-radius: 10px;
+    width: 200px;
+    height: 320px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}

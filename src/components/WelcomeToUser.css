@@ -1,0 +1,94 @@
+.welcomeToUser
+{
+    background: linear-gradient(rgb(224, 213, 213), rgb(161, 161, 226));
+    width: 80%;
+    margin: auto;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcomeToUser > .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.welcomeToUser > .container > .welcome
+{
+    width: 30%;
+    margin-left: 60px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcomeToUser > .container > .welcome > p
+{
+    justify-content: baseline;
+    width: 70%;
+}
+.welcomeToUser > .container > .favoriteBookOfUsers
+{
+    background-color: aliceblue;
+    width: 30%;
+    margin-right: 60px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.welcomeToUser > .container > .favoriteBookOfUsers > .favoriteImgOfUsers
+{
+    height: 93%;
+    width: 76%;
+}
+.welcomeToUser > .container > .favoriteBookOfUsers > .favoriteImgOfUsers > img
+{
+    height: 86%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .welcomeToUser
+    {
+        display: block;
+        width: 88%;
+        height: 140vh;
+        max-height: 500vh;
+        background:none;
+    }
+    .welcomeToUser > .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 160vh;
+    max-height: 500vh;
+}
+.welcomeToUser > .container > .welcome
+{
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0;
+    height: 260px;
+    margin-bottom: 10px;
+}
+.welcomeToUser > .container > .favoriteBookOfUsers
+{
+    width: 100%;
+    margin-right: 0;
+    height: 400px;
+}
+.welcomeToUser > .container > .favoriteBookOfUsers > .favoriteImgOfUsers
+{
+    height: 350px;
+    width: 80%;
+}
+}

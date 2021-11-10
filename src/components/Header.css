@@ -1,0 +1,132 @@
+.header
+{
+    height: 72px;
+    border-bottom: 1px solid black;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.header > .header__options
+{
+    list-style-type: none;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header > .header__options > li > a > .MuiSvgIcon-root:hover
+{
+    background-color: black;
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding: 1px;
+    padding-bottom: 1px;
+    border-radius: 2px;
+}
+.header > .header__options > .item
+{
+    width: 80px;
+    position: relative;
+}
+.header > .header__options > li > a
+{
+    color: #000;
+}
+.header > .header__options > li > ul
+{
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    border: 1px solid black;
+    background-color: white;
+    padding: 4.5px;
+    border-radius: 4px;
+    display: none;
+}
+.showSubOptions
+{
+}
+.header > .header__options > li > ul > li > a
+{
+    color: #000;
+    text-decoration: none;
+    font-size: 14.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header > .header__options > li > ul > li > a:hover
+{
+    background-color: rgb(202, 190, 190); 
+    border-radius: 6px;  
+}
+.header > .header__menuIcon
+{
+    display: none;
+}
+.header > .header__closeMenuIcon
+{
+    display: none;
+}
+@media(max-width: 768px) {
+    .header
+    {
+        color: white;
+        width: 80%;
+        height: 100vh;
+        left: -74%;
+        position: fixed;
+        background-color: none;
+        transition: left 0.4s linear;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .header > .header__options
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(246, 253, 251);
+        justify-content: center;
+        border-radius: 20px;
+        padding: 10px;
+        position: relative;
+        width: 60%;
+    }
+    .header > .header__options > li
+    {
+        margin-bottom: 20px;
+    }
+    .header > .header__options > .item
+    {
+        width: auto;
+    }
+    .header > .header__menuIcon
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+    .header > .header__closeMenuIcon
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    .header > .header__options > li > ul
+    {
+        right: 0;
+    }
+    .showHeader
+    {
+        left: 0;
+        transition: left 0.3s linear;
+        border: 1px solid rgb(255, 255, 255);
+    }
+}

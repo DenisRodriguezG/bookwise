@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+.login-c
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login
+{
+    border: 1px solid white;
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: rgba(109, 125, 126, 0.9);
+}
+
+.login > .error
+{
+    border: 1px solid white;
+    height: 40px;
+    width: 80%;
+    background-color: rgb(180, 55, 55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    max-height: 500px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.login > .error > p
+{
+    color: white;
+}
+.login > .logo > img
+{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px black;
+}
+
+.login > .form__login
+{
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 80%;
+    padding: 5px;
+    background: rgba(106, 102, 109, 0.9);
+}
+.login > .form__login > .email
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.login > .form__login > .email > label
+{
+    color: white;
+    font-size: 22px;
+}
+.login > .form__login > .email > input
+{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.login > .form__login > .password
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.login > .form__login > .password > label
+{
+    color: white;
+    font-size: 22px;
+}
+.login > .form__login > .password > input
+{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+}
+.login > .form__login > .password > .show__password
+{
+    position: absolute;
+    right: 10px;
+    top: 51%;
+    cursor: pointer;
+}
+.login > .form__login > .password > .show__password > img
+{
+    width: 26px;
+    border-radius: 20px;
+}
+
+.login > .form__login > .btn__login
+{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+.login > .form__login > .btn__login > button
+{
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(7, 156, 255);
+    text-align: center;
+    font-size: 23px;
+    padding: 5px;
+    cursor: pointer;
+}
+.login > .form__login > .btn__login > button:hover
+{
+    box-shadow: 0 0 2px 1px black;
+}
+
+.login > .info
+{
+    margin-top: 8px;
+    color: white;
+}
+.login > .info > p
+{
+    font-size: 19px;
+}
+.login > .info > p > .registerTo
+{
+    font-size: 20px;
+}
+.login > .info > p > .registerTo:hover
+{
+    font-weight: 700;
+}
+
+@media(max-width: 768px)
+{
+    .login
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .login > .form__login
+    {
+        width: 96%;
+    }
+    .login > .form__login > .email > label
+    {
+        font-size: 19px;
+    }
+    .login > .form__login > .email > input
+    {
+        font-size: 18px;
+    }
+    .login > .form__login > .password > input 
+    {
+        font-size: 18px;
+    }
+    .login > .form__login > .password > label
+    {
+        font-size: 19px;
+    }
+    .login > .form__login > .btn__login > button 
+    {
+        font-size: 20px;
+    }
+}
